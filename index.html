@@ -104,12 +104,7 @@
 
             <td style="vertical-align:middle;">
             <div class="video2">
-              <!-- <img src="images/ijcai2022.png" width=350 height=196 alt=""/> -->
               <img src="images/ijcai2022.png" width=400 height=200 alt=""/>
-                <!-- <div class="img"  onmouseover="come()"><img src="images/snisr.jpg" width=350 height=196 alt=""/></div> -->
-                <!-- <a href="此处填写你想要跳转的地址"> -->
-                <!-- <video id="video" style="display: none"  src="videos/t_video.mp4" width=350 height=196 onmouseout="go()" loop autoplay playsinline></video> -->
-                <!-- </a> -->
             </div>
             </td>
     
@@ -132,6 +127,34 @@
                 <p>In this paper, we study the graphic layout generation problem of producing high-quality visualtextual presentation designs for given images. We note that image compositions, which contain not only global semantics but also spatial information, would largely affect layout results. Hence, we propose a deep generative model, dubbed as composition-aware graphic layout GAN (CGLGAN), to synthesize layouts based on the global and spatial visual contents of input images. To obtain training images from images that already contain manually designed graphic layout data, previous work suggests masking design elements (e.g., texts and embellishments) as model inputs, which inevitably leaves hint of the ground truth. We study the misalignment between the training inputs (with hint masks) and test inputs (without masks), and design a novel domain alignment module (DAM) to narrow this gap. For training, we built a large-scale layout dataset which consists of 60,548 advertising posters with annotated layout information. To evaluate the generated layouts, we propose three novel metrics according to aesthetic intuitions. Through both quantitative and qualitative evaluations, we demonstrate that the proposed model can synthesize highquality graphic layouts according to image compositions</p>
               </td>
             </tr> 
+
+
+            <td style="vertical-align:middle;">
+                <div class="video3">
+                  <img src="images/fast_mask.png" width=400 height=350 alt=""/>
+                </div>
+                </td>
+        
+    
+                  <td style="padding-left:20px; vertical-align:middle;">
+                    <a><papertitle><b>Fast Vehicle and Pedestrian Detection Using Improved Mask R-CNN</b></papertitle></a>
+                    <br>
+                    <a href="https://github.com/ChenchenXu218/ChenchenXu218.github.io/"><u>Chenchen Xu*</u></a>, <br>
+                    <a>Guili Wang</a>,
+                    <a>Songsong Yan</a>,
+                    <a>Jianghua Yu</a>,
+                    <a>Baojun Zhang</a>,
+                    <a>Shu Dai</a>,
+                    <a>Yu Li</a>,
+                    <a>Lin Xu</a>,
+                    <br>
+              <h5><strong>Mathematical Problems in Engineering</strong><h5> 
+                    <a href=""><strong>project</strong></a> |
+                    <a href="https://www.hindawi.com/journals/mpe/2020/5761414/"><strong>paper</strong></a> |
+                    <a href=""><strong>video</strong></a> |
+                    <p>This study presents a simple and effective Mask R-CNN algorithm for more rapid detection of vehicles and pedestrians. The method is of practical value for anticollision warning systems in intelligent driving. Deep neural networks with more layers have greater capacity but also have to perform more complicated calculations. To overcome this disadvantage, this study adopts a Resnet-86 network as a backbone that differs from the backbone structure of Resnet-101 in the Mask R-CNN algorithm within practical conditions. The results show that the Resnet-86 network can reduce the operation time and greatly improve accuracy. The detected vehicles and pedestrians are also screened out based on the Microsoft COCO dataset. The new dataset is formed by screening and supplementing COCO dataset, which makes the training of the algorithm more efficient. Perhaps, the most important part of our research is that we propose a new algorithm, Side Fusion FPN. The parameters in the algorithm have not increased, the amount of calculation has increased by less than 0.000001, and the mean average precision (mAP) has increased by 2.00 points. The results show that, compared with the algorithm of Mask R-CNN, our algorithm decreased the weight memory size by 9.43%, improved the training speed by 26.98%, improved the testing speed by 7.94%, decreased the value of loss by 0.26, and increased the value of mAP by 17.53 points.</p>
+                  </td>
+                </tr> 
       
 
   
@@ -179,5 +202,20 @@
         $(".img2").show();
         $("#video2").hide();
         $("#video2")[0].pause();
+    }
+</script>
+<script>
+    myVid=document.getElementById("video3");
+    myVid.muted=true;
+    function come2() {
+        $("#video3").show();
+        $(".img3").hide();
+        // $("#video").load();//执行一次加载一次，从头开始播放
+        $("#video3")[0].play();
+    }
+    function go2() {
+        $(".img3").show();
+        $("#video3").hide();
+        $("#video3")[0].pause();
     }
 </script>
