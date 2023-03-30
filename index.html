@@ -155,6 +155,32 @@
                     <p>This study presents a simple and effective Mask R-CNN algorithm for more rapid detection of vehicles and pedestrians. The method is of practical value for anticollision warning systems in intelligent driving. Deep neural networks with more layers have greater capacity but also have to perform more complicated calculations. To overcome this disadvantage, this study adopts a Resnet-86 network as a backbone that differs from the backbone structure of Resnet-101 in the Mask R-CNN algorithm within practical conditions. The results show that the Resnet-86 network can reduce the operation time and greatly improve accuracy. The detected vehicles and pedestrians are also screened out based on the Microsoft COCO dataset. The new dataset is formed by screening and supplementing COCO dataset, which makes the training of the algorithm more efficient. Perhaps, the most important part of our research is that we propose a new algorithm, Side Fusion FPN. The parameters in the algorithm have not increased, the amount of calculation has increased by less than 0.000001, and the mean average precision (mAP) has increased by 2.00 points. The results show that, compared with the algorithm of Mask R-CNN, our algorithm decreased the weight memory size by 9.43%, improved the training speed by 26.98%, improved the testing speed by 7.94%, decreased the value of loss by 0.26, and increased the value of mAP by 17.53 points.</p>
                   </td>
                 </tr> 
+
+
+                <td style="vertical-align:middle;">
+                    <div class="video4">
+                      <img src="images/yolact.png" width=400 height=180 alt=""/>
+                    </div>
+                    </td>
+            
+        
+                      <td style="padding-left:20px; vertical-align:middle;">
+                        <a><papertitle><b>Detecting Small Chinese Traffic Signs via Improved YOLOv3 Method</b></papertitle></a>
+                        <br>
+                        <a>Baojun Zhang</a>,<br>
+                        <a>Guili Wang</a>,
+                        <a>Huilan Wang</a>,
+                        <a href="https://github.com/ChenchenXu218/ChenchenXu218.github.io/"><u>Chenchen Xu*</u></a>,
+                        <a>Yu Li</a>,
+                        <a>Lin Xu</a>,
+                        <br>
+                  <h5><strong>Mathematical Problems in Engineering</strong><h5> 
+                        <a href=""><strong>project</strong></a> |
+                        <a href="https://www.hindawi.com/journals/mpe/2021/8826593/"><strong>paper</strong></a> |
+                        <a href=""><strong>video</strong></a> |
+                        <p>Long-distance detection of traffic signs provides drivers with more reaction time, which is an effective technique to reduce the probability of sudden accidents. It is recognized that the imaging size of far traffic signs is decreasing with distance. Such a fact imposes much challenge on long-distance detection. Aiming to enhance the recognition rate of long-distance small targets, we design a four-scale detection structure based on the three-scale detection structure of YOLOv3 network. In order to reduce the occlusion effects of similar objects, NMS is replaced by soft-NMS. In addition, the datasets are trained and the K-Means method is used to generate the appropriate anchor boxes, so as to speed up the network computing. By using these methods, better experimental results for the recognition of long-distance traffic signs have been obtained. The recognition rate is 43.8 frames per second (FPS), and the recognition accuracy is improved to 98.8%, which is much better than the original YOLOv3.</p>
+                      </td>
+                    </tr> 
       
 
   
@@ -217,5 +243,20 @@
         $(".img3").show();
         $("#video3").hide();
         $("#video3")[0].pause();
+    }
+</script>
+<script>
+    myVid=document.getElementById("video4");
+    myVid.muted=true;
+    function come2() {
+        $("#video4").show();
+        $(".img4").hide();
+        // $("#video").load();//执行一次加载一次，从头开始播放
+        $("#video4")[0].play();
+    }
+    function go2() {
+        $(".img4").show();
+        $("#video4").hide();
+        $("#video4")[0].pause();
     }
 </script>
